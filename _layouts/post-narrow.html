@@ -1,0 +1,14 @@
+---
+layout: default_design
+---
+
+<div id="post-container">
+  <div class="post post-narrow">
+    <h2>{{ page.title }}</h2>
+    <!-- <div class="separator"> </div> -->
+    {{ content }}
+  </div>
+</div>
+
+<a href="{{page.next.url}}" title="{{page.next.title}}" class="next-project"></a>
+<a href="{{page.previous.url}}" title="{{page.previous.title}}" class="prev-project"></a>

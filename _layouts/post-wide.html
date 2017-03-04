@@ -1,0 +1,21 @@
+---
+layout: default_design
+---
+
+<div id="post-container">
+  {% if page.herotype == "video" %}
+    <video width="100%"  poster="" autoplay controls>
+      <source src="{{page.video}}" type="video/mp4">
+    </video>
+  {% else %}
+    <div class="post-wide-hero {{page.uid}}-hero" style="background-image:url(/img/{{page.uid}}/hero.jpg); background-color:{{page.hero-bg-color}}"></div>
+  {% endif %}
+  <div class="post post-wide">
+    <h2>{{ page.title }}</h2>
+    <!-- <div class="separator"></div> -->
+    {{ content }}
+  </div>
+</div>
+
+<a href="{{page.next.url}}" title="{{page.next.title}}" class="next-project target"></a>
+<a href="{{page.previous.url}}" title="{{page.previous.title}}" class="prev-project target"></a>

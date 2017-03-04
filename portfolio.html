@@ -1,0 +1,43 @@
+---
+layout: default_design
+title: Sketch & Design
+tags: portfolio
+permalink: /design/
+---
+
+<ul class="projects clearfix">
+{% for post in site.portfolio %}
+  <li>
+    <div class="project">
+      <a class="cover" href="{{ post.url }}">
+        <div class="project-details">
+          <span>
+            {{ post.title }}
+          </span>
+          <span>
+            {{ post.worktype }}
+          </span>
+          <span>
+            View project
+          </span>
+        </div>
+      </a>
+      <!-- {% if post.opensource %}
+        {% if post.blackbg %}
+          <span class="github-icon light"></span>
+        {% else %}
+          <span class="github-icon"></span>
+        {% endif %}
+      {% endif %} -->
+      <!-- {% if post.progress %}
+        <span class="progress">
+          <span class="under-construction"></span>
+          <span class="progress-bar" style="width: {{ post.progress }}%"></span>
+        </span>
+      {% endif %} -->
+      <img class="thumb" src="/img/thumbs/{{ post.uid }}.jpg" />
+      <div class="aspect-two-one"></div>
+    </div>
+  </li>
+{% endfor %}
+</ul>
