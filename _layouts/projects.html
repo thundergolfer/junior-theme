@@ -1,0 +1,20 @@
+---
+layout: default
+js:
+- js/projects.js
+---
+<div id="display-projects"></div>
+
+
+{% for js in page.js %}
+  <script type="text/javascript">
+  {% include {{ js }} %}
+  </script>
+{% endfor %}
+
+<!-- <script src="path_to_js/gitquery.js"></script> -->
+<script type="text/javascript">
+  $(function() {
+    $("#display-projects").getRepos("thundergolfer"); //Add your github username.
+  });
+</script>
