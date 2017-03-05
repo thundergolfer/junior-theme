@@ -1,11 +1,9 @@
 <header class="site-header px2 px-responsive">
   <div class="mt2 wrap">
     <div class="measure">
-      <a href="{{ site.url }}" class="site-title">{{ site.title }}</a>
-      <nav class="site-nav">
+      <nav class="">
         {% include navigation.html %}
       </nav>
-      <div class="clearfix"></div>
       {% if site.show_social_icons %}
         {% include social_links.html %}
       {% endif %}
@@ -94,14 +92,16 @@ $( ".menu-btn" ).click(function() {
     //alert($( this ).css( "transform" ));
     if (  $( ".menu-line:nth-of-type(2)" ).css( "transform" ) == 'matrix(0.71934, 0.694658, -0.694658, 0.71934, 0, 0)' ){
         console.log("Yay")
-        console.log($( ".menu-line:nth-of-type(2)" ).css( "transform" ))
+        console.log($("#main-menu"))
         $(".menu-line:nth-of-type(2)").css("transform","rotate(135deg)");
         $(".menu-text").css("opacity", "1")
+        $( "#main-menu" ).css("transform", "translate(0%, -116%) matrix(1, 0, 0, 1, 0, 0)")
     } else {
         console.log("Yes")
         console.log($( ".menu-line:nth-of-type(2)" ).css( "transform" ))
-        $(".menu-line:nth-of-type(2)").css("transform","rotate(44deg)");
+        $(".menu-line:nth-of-type(2)").css("transform","rotate(44deg)")
         $(".menu-text").css("opacity", "0")
+        $( "#main-menu" ).css("transform", "matrix(1, 0, 0, 1, 0, 0)")
     }
 });
 </script>
