@@ -1,13 +1,108 @@
 <footer class="center">
-  <div class="measure">
-    <small>
-      &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
-    </small>
+  <div class="desktop-footer">
+    <div class="footer-each">
+      <h5>
+        <a href="https://www.google.com/maps/place/Zendesk/@-37.8171779,144.9592809,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad65d4b6c187ceb:0xea7703041c1d49e8!8m2!3d-37.8171822!4d144.9614696" target="_blank">
+          <span>CBD</span><br><span>Melbourne</span><br><span>Australia</span></span>
+        </a>
+      </h5>
+    </div>
+    <div class="footer-each">
+      <h5><a href="tel:+14154175500"><span>+61 429</span><br><span>835 565</span></a></h5>
+    </div>
+    <div class="footer-each">
+      <h5><a href="mailto:newbusiness@junior.io"><span>jbelotti</span><br><span>@zendesk</span><br><span>.com</span></a></h5>
+    </div>
+    <div class="footer-each">
+      <h5><a href="mailto:press@junior.io"><span>jonathon.</span><br><span>bel.</span><br><span>melbourne</span><br><span>@gmail.com</span></a></h5>
+    </div>
+    <div class="footer-each">
+      <h5><a href="https://www.linkedin.com/in/jonathonbelotti/" target="_blank" alt="LinkedIn"><span>LinkedIn</span></a></h5>
+      <h5><a href="https://github.com/thundergolfer" target="_blank" alt="Github"><span>Github</span></a></h5>
+      <h5><a href="https://twitter.com/jonobelotti_IO" target="_blank" alt="Twitter"><span>Twitter</span></a></h5>
+    </div>
   </div>
 </footer>
+
+<style>
+
+footer .desktop-footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.client-each, .footer-bar, .section, footer .desktop-footer {
+    max-width: 45.33563em;
+}
+
+footer {
+    visibility: visible;
+    -webkit-transform: translateY(0) scale(1);
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+    transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+}
+</style>
+
+<style>
+.home .contact-overlay .contact-a:nth-child(6n+1), .icon-and-text:nth-child(2n+1), footer .desktop-footer .footer-each:nth-child(6n+1) {
+    clear: left;
+}
+footer .desktop-footer .footer-each {
+    float: left;
+    display: block;
+    margin-right: 4%;
+    width: 14.70196%;
+}
+
+footer .desktop-footer .footer-each:first-child {
+    margin-left: 4%;
+}
+
+footer .footer-each a {
+  text-decoration: none;
+  background-image: none;
+  color: #000;
+  font-weight: 300;
+}
+
+footer .footer-each a:active, footer .footer-each a:hover {
+    outline-width: 0;
+}
+
+.founder-each h2, .group-pic, .header-title, .home .contact-overlay .contact-a, .section h1, .section h2, .section h3, .section p, .team small, .title-div, body .home .contact-overlay .contact-a-mob, footer .desktop-footer .footer-each, footer .mobile-footer, footer .mobile-footer .footer-each, nav li {
+    text-align: center;
+}
+
+.contact-a, .contact-a span, .contact-a-mob span, .footer-each span, footer, sub, sup {
+    position: relative;
+}
+
+.contact-a span:before, .contact-a-mob span:before, .footer-each span:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    transition: .4s;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.contact-a a:hover span:before, .contact-a-mob a:hover span:before, .footer-each a:hover span:before {
+    content: '';
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+</style>
+
 {% if site.enable_anchorjs %}<!-- AnchorJS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.0.0/anchor.min.js"></script>
 <script>
     anchors.options.visible = 'always';
-    anchors.add('article h2, article h3, article h4, article h5, article h6');
+    anchors.add('article h2, article h3, article h5, article h5, article h6');
 </script>{% endif %}
