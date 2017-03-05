@@ -22,18 +22,24 @@
             <h4><a class="nav-underline projects" href="{{page.url}}">{{page.title}}</a></h4></li>
         {% endif %}
       {% endfor %}
+          <li>
+          {% if site.show_social_icons %}
+            {% include social_links.html %}
+          {% endif %}
+          </li>
   </div>
 </ul>
-
+<!--
 <div class="title-div">
   <div class="title" style="transform: translate(0%, -116%) matrix(1, 0, 0, 1, 0, 0);"><span class="title-label">About</span></div>
-</div>
+</div> -->
 
 <style>
 nav ul {
     z-index: 1001;
     float: left;
     padding-left: 0;
+    padding-bottom: 5%;
     margin: 0;
     background: #fff;
     width: 100%;
