@@ -60,7 +60,8 @@ dt {
 
 <style> /* For Stars/Forks tag */
 .tag, .lang {
-    font-family: sans-serif;
+  z-index: -1; /* otherwise menu appears behind tags */
+  font-family: sans-serif;
 	white-space:nowrap;
 	position:relative;
 	margin:0 0px 0 0px;
@@ -85,7 +86,8 @@ dt {
 }
 
 .numbertag{
-    font-family: sans-serif;
+  z-index: -1; /* otherwise menu appears behind tags */
+  font-family: sans-serif;
 	white-space:nowrap;
 	position:relative;
 	margin:0 0px 0 0px;
