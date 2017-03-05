@@ -8,6 +8,7 @@ jQuery.fn.getRepos = function (username) {
   var target = this;
   $.gitUser(username, function (data) {
     var repos = data.data; // JSON Parsing
+    console.log(repos)
     //alert(repos.length); Only for checking how many items are returned.
     sortByForks(repos); //Sorting by forks. You can customize it according to your needs.
     var list = $('<dl/>');

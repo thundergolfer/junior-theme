@@ -9,6 +9,71 @@ js:
 
 <div id="display-projects"></div>
 
+<div class="circle-button">
+      <div class="top-circle" data-sr-id="80" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+        <img src="{{ site.url }}/images/logos/top.png">
+  </div>
+</div>
+
+<style>
+@media screen and (min-width: 770px) {
+.clients .top-circle {
+    margin-bottom: 100px;
+}
+}
+
+.circle-button .top-circle {
+    width: 100px;
+    height: 100px;
+    background: #000;
+    border-radius: 50px;
+    margin: 0 auto;
+    display: block;
+}
+
+.circle-button .top-circle, .down-circle, .down-circle-click, .home .contact-btn, nav .nav-jr {
+    cursor: pointer;
+}
+
+.circle-button:last-child {
+    margin-right: 0;
+}
+
+.circle-button {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+}
+
+.circle-button .top-circle img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 28px;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.top-circle').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
 
 {% for js in page.js %}
   <script type="text/javascript">

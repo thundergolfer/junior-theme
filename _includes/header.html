@@ -12,3 +12,96 @@
     </div>
   </div>
 </header>
+
+<div class="menu-btn">
+  <span class="menu-line"></span>
+  <span class="menu-line"></span>
+  <span class="menu-text">Menu</span>
+</div>
+
+<style>
+.menu-btn.show, [data-id=home] .menu-btn {
+    pointer-events: auto; /* not using this block at the moment */
+    opacity: 1;
+}
+.header-title span:before, .menu-btn, .menu-text, [data-id=home] .menu-btn {
+    position: absolute;
+}
+.menu-btn {
+    cursor: pointer;
+    height: 100px;
+    width: 106px;
+    z-index: 10000;
+    pointer-events: auto;
+    top: 0;
+    opacity: 1;
+}
+
+.menu-line:nth-of-type(1), .menu-line:nth-of-type(2) {
+    width: 2px;
+    height: 85px;
+    top: 15%;
+    left: 50%;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    position: absolute;
+    background: #000;
+}
+
+.menu-line:nth-of-type(1), .menu-line:nth-of-type(2) {
+    width: 2px;
+    height: 85px;
+    top: 15%;
+    left: 50%;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    position: absolute;
+    background: #000;
+}
+
+[data-id=home] .menu-text {
+    visibility: visible;
+}
+
+.menu-text {
+    top: 73%;
+    left: 22px;
+    font-size: .75em;
+    font-weight: Normal;
+    color: #000;
+    pointer-events: none;
+    visibility: visible; /* this was "hidden" */
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+
+.menu-btn .menu-line:nth-of-type(2) {
+  transform: matrix(-0.7071, 0.70711, -0.70711, -0.7071, 0, 0);
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+}
+
+</style>
+
+<script>
+$( ".menu-btn" ).click(function() {
+    //alert($( this ).css( "transform" ));
+    if (  $( ".menu-line:nth-of-type(2)" ).css( "transform" ) == 'matrix(0.71934, 0.694658, -0.694658, 0.71934, 0, 0)' ){
+        console.log("Yay")
+        console.log($( ".menu-line:nth-of-type(2)" ).css( "transform" ))
+        $(".menu-line:nth-of-type(2)").css("transform","rotate(135deg)");
+        $(".menu-text").css("opacity", "1")
+    } else {
+        console.log("Yes")
+        console.log($( ".menu-line:nth-of-type(2)" ).css( "transform" ))
+        $(".menu-line:nth-of-type(2)").css("transform","rotate(44deg)");
+        $(".menu-text").css("opacity", "0")
+    }
+});
+</script>
