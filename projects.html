@@ -16,6 +16,10 @@ js:
 </div>
 
 <style>
+dt {
+  margin-bottom: 5%;
+}
+
 @media screen and (min-width: 770px) {
 .clients .top-circle {
     margin-bottom: 100px;
@@ -51,6 +55,57 @@ js:
     display: block;
     margin: 0 auto;
     padding-top: 28px;
+}
+</style>
+
+<style> /* For Stars/Forks tag */
+.tag, .lang {
+    font-family: sans-serif;
+	white-space:nowrap;
+	position:relative;
+	margin:0 0px 0 0px;
+	displaY:inline-block;
+	height: 50px;
+	padding: 0 25px 0 15px;
+	background:#E8EDF0;
+	color:#999;
+	line-height: 50px;
+}
+
+.lang {
+    margin-right: -5px;
+    display: inline-block;
+    *display:inline; /* ie 7 fix */
+    vertical-align: top;
+    font-family: sans-serif;
+	position:relative;
+	display:inline-block;
+	padding: 0 0px 0 15px;
+	color:#999;
+}
+
+.numbertag{
+    font-family: sans-serif;
+	white-space:nowrap;
+	position:relative;
+	margin:0 0px 0 0px;
+    margin-right: 10px;
+	displaY:inline-block;
+	height: 50px;
+	padding: 0 25px 0 15px;
+	background:#E8E440;
+	color:#999;
+	line-height: 50px;
+}
+.numbertag:after{
+	position:absolute;
+	content:"";
+	left:-25px;
+	width: 1px;
+	height:0px;
+	border-right: 25px solid #E8E440;
+	border-top:  25px solid transparent;
+	border-bottom:  25px solid transparent;
 }
 </style>
 
