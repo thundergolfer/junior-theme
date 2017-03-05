@@ -430,7 +430,10 @@ td {
   }
 
   .projects {
+    position: relative;
+    z-index: -1;
     margin: 0 15px ;
+    padding-bottom: 5%;
   }
 
   .projects li {

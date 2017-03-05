@@ -2,20 +2,27 @@
   <!-- <li class="nav-jr home-anc"><h4><a href="#home"><br></a></h4></li> -->
   <div class="flexbox-parent">
     <div class="flexbox-child">
-      <li class="about-anc">
-        <h4><a class="nav-underline about" href="#about">About</a></h4></li>
-      <li class="expertise-anc">
-        <h4><a class="nav-underline expertise" href="#expertise">Expertise</a></h4></li>
-      <li class="team-anc">
-        <h4><a class="nav-underline team" href="#team">Team</a></h4></li>
-      <li class="beliefs-anc">
-        <h4><a class="nav-underline beliefs" href="#beliefs">Beliefs</a></h4></li>
-      <li class="clients-anc">
-        <h4><a class="nav-underline clients" href="#clients">Clients</a></h4></li>
-      </div>
+      {% for page in site.pages %}
+        {% if page.tags contains "about" %}
+          <li class="about-anc">
+            <h4><a class="nav-underline about" href="{{page.url}}">{{page.title}}</a></h4></li>
+        {% endif %}
+        {% if page.tags contains "contact" %}
+          <li class="expertise-anc">
+            <h4><a class="nav-underline expertise" href="{{page.url}}">{{page.title}}</a></h4></li>
+        {% endif %}
+        {% if page.tags contains "portfolio" %}
+          <li class="team-anc">
+            <h4><a class="nav-underline team" href="{{page.url}}">{{page.title}}</a></h4></li>
+        {% endif %}
+        {% if page.tags contains "projects" %}
+          <li class="beliefs-anc">
+            <h4><a class="nav-underline beliefs" href="{{page.url}}">{{page.title}}</a></h4></li>
+        {% endif %}
+      {% endfor %}
   </div>
-
 </ul>
+
 <div class="title-div">
   <div class="title" style="transform: translate(0%, -116%) matrix(1, 0, 0, 1, 0, 0);"><span class="title-label">About</span></div>
 </div>
