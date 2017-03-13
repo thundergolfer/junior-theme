@@ -53,7 +53,7 @@ paypal_url:
 flattr_button:
 
 # Post sharing icons
-show_sharing_icons: False # Looks Ugly atm
+show_sharing_icons: True # Looks Ugly atm
 # Change to 'true' to enable individual icons
 share_facebook: True
 share_twitter: True
@@ -63,7 +63,7 @@ share_digg: false
 share_tumblr: false
 share_reddit: True
 share_stumbleupon: false
-share_hackernews: false
+share_hackernews: True
 
 text:
   pagination:
