@@ -44,7 +44,7 @@ Folks wishing to use Jekyll's templates and styles can do so with a little bit o
 To see your Jekyll site with *Junior* applied, start a Jekyll server. In Terminal, from `/junior-theme` (or whatever your Jekyll site's root directory is named):
 
 ```bash
-> jekyll serve
+> jekyll serve # You might need "bundle exec jekyll serve"
 ```
 Open <http://localhost:4000> in your browser, and voilà.
 
