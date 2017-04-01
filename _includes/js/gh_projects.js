@@ -14,16 +14,16 @@ jQuery.fn.getRepos = function (username) {
     target.empty().append(list);
     $(repos).each(function () {
       checkfork = this.fork;
-      console.log(this.name)
-      console.log(this.language)
+      console.log(this)
       if ((this.name != (username.toLowerCase() + '.github.com')) && (checkfork != true)) { //Check for username.github.com repo and for forked projects
         list.append('<dt> \
-                        <a style="font-size:20px;" href="' + (this.homepage ? this.homepage : this.html_url) + '">' + this.name + '</a> \
+                        <a style="font-size:20px;" href="' + (this.homepage ? this.homepage : this.html_url) + '"><h4 style="display: inline; padding-right: 2%;">/' + this.name + '   </h4></a> \
                         <span class="lang" style="background:' + mapLangToColor(this.language) +'"></span> \
                       	<span class="tag"><i class="fa fa-github fa-2" aria-hidden="true"></i> STARS</span> \
-                      	<span class="numbertag">' + this.watchers + '</span> \
+                      	<a href=' + this.stargazers_url + '><span class="numbertag">' + this.watchers + '</span></a> \
                         <span class="tag"><i class="fa fa-github fa-2" aria-hidden="true"></i> FORKS</span> \
-                      	<span class="numbertag">' + this.forks + '</span> \
+                      	<a href=' + this.forks_url + '><span class="numbertag">' + this.forks + '</span></a> \
+                        <div style="padding-top: 2%;"><p>' + this.description + (this.homepage ? ('<a href="' + this.homepage + '"> ' + this.homepage + '</a>') : "") + '</p></div> \
                     ');
         //Similarly fetch everything else you need.
       }

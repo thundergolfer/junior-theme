@@ -1,6 +1,5 @@
 a {
   color: $link-color;
-  text-shadow: white 1px 0px 0px, white -1px 0px 0px;
 }
 
 a:hover,
@@ -9,7 +8,6 @@ a:active {
   border: 0;
   color: $link-hover-color;
   text-decoration: none;
-  text-shadow: white 1px 0px 0px, white -1px 0px 0px;
 }
 
 // Correct issues with buttons
