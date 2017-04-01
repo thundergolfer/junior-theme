@@ -477,7 +477,7 @@ td {
 
   .projects .cover:hover {
     opacity: 1;
-    color:#333;
+    color:#111;
   }
 
   .projects .cover .project-details{
