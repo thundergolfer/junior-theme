@@ -12,7 +12,7 @@
 }
 
 .site-wrap {
-  z-index: -1; /* critical to ensure the nav menu sits on top when active */
+  // z-index: -1; /* critical to ensure the nav menu sits on top when active */
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1 0 auto;
