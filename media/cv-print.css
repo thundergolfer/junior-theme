@@ -105,7 +105,7 @@ li ul {
 
 h1,h2,h3,h4 {
 	font-weight: 400;
-	font-family: Cousine,Verdana,sans-serif;
+	/*font-family: Cousine,Verdana,sans-serif;*/
 	width: 65%;
 }
 
@@ -162,7 +162,7 @@ a:hover {
 }
 
 #webaddress {
- 	margin-top: 0em;
+ 	margin-top: 0.5em;
 	position: relative;
 	left: 28%;
 	color: #ccc;
@@ -190,7 +190,7 @@ strong {
 
 
 #projects {
-	 page-break-before: always; 
+	 page-break-before: always;
 }
 
 .footer {
