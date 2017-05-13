@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset=utf-8 />
-  <title> Ben Moore's CV</title>
+  <title> Jonathon Belotti's CV</title>
   <link href="../media/cv-screen.css" type="text/css" rel="stylesheet" media="screen">
   <link href="../media/cv-print.css" type="text/css" rel="stylesheet" media="print">
 
@@ -20,7 +20,7 @@
   }
   }
 
-  .circle-button .top-circle {
+  .circle-button .top-circle, .print-button .top-circle  {
       width: 100px;
       height: 100px;
       background: #000;
@@ -38,13 +38,14 @@
   }
 
   .circle-button {
+      cursor: pointer;
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%;
   }
 
-  .circle-button .top-circle img {
+  .circle-button .top-circle img, .print-button .top-circle img {
       width: 80%;
       display: block;
       margin: 0 auto;
@@ -69,6 +70,27 @@
     </div>
   </div>
 
+  <div class="print-button">
+        <div class="top-circle" data-sr-id="80" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+          <img src="{{ site.url }}/images/logos/top.png">
+    </div>
+  </div>
+
+  <style>
+  .print-button {
+      cursor: pointer;
+      position: fixed;
+      bottom: 90px;
+      right: 30px;
+  }
+
+  .print-button .top-circle {
+  }
+
+  .print-button .top-circle img {
+  }
+  </style>
+
   <div class="footer"></div>
 
   <script>
@@ -82,10 +104,16 @@
             }
         });
 
-        $('.top-circle').click(function () {
+        $('.circle-button').click(function () {
             $("html, body").animate({
                 scrollTop: 0
             }, 600);
+            return false;
+        });
+
+        $('.print-button').click(function () {
+            console.log("hey");
+            window.print();
             return false;
         });
 

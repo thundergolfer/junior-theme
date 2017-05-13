@@ -189,8 +189,17 @@ strong {
 }
 
 
-#projects {
+/*#projects { <!-- my resume structure doesn't require this. I want it all on 1 page --!>
 	 page-break-before: always;
+}*/
+
+
+
+@media print
+{
+	.print-button, .circle-button, .top-circle, .top-circle img {
+		display: none !important;
+	}
 }
 
 .footer {
