@@ -1,6 +1,6 @@
 ---
 layout: cv
-title: Thundergolfer's CV
+title: Resumé
 tags: resume
 permalink: /about/
 tags: about
