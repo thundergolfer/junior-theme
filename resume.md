@@ -2,8 +2,7 @@
 layout: cv
 title: Resumé
 tags: resume
-permalink: /about/
-tags: about
+permalink: /resume/
 flicker: true
 ---
 # Benjamin L. Moore
