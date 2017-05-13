@@ -21,6 +21,10 @@
           <li class="beliefs-anc">
             <h4><a class="nav-underline projects" href="{{page.url}}">{{page.title}}</a></h4></li>
         {% endif %}
+        {% if page.tags contains "resume" %}
+          <li class="beliefs-anc">
+            <h4><a class="nav-underline projects" href="{{page.url}}">{{page.title}}</a></h4></li>
+        {% endif %}
       {% endfor %}
           <li>
           {% if site.show_social_icons %}
