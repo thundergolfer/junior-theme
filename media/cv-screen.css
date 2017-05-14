@@ -67,16 +67,17 @@ p {
 	width: 65%;
 }
 
-code {
+#resume code {
 	font: normal normal;
 	font-size: 90%;
 	/*font-family: Menlo, monospace, sans-serif;*/
 	color: #aaa;
 }
 
-p code {
+#resume p code {
 	position: absolute;
-	left: -10%;
+	left: -12%;
+	background-color: #fff;
 }
 
 
@@ -140,7 +141,7 @@ h1+p {
 	width: 15%;
 }
 
-h3 {
+#resume h3 {
 	color: #F07415;
 	font-size: 1em;
 	line-height: 2em;
