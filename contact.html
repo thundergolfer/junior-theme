@@ -11,7 +11,11 @@ tags: contact
       <input type="text" name="email" class="field-light" placeholder="{{ site.text.contact.email }}">
       <textarea type="text" name="content" class="field-light" rows="5" placeholder="{{ site.text.contact.content }}" style="resize: vertical"></textarea>
       <input type="text" name="_gotcha" style="display:none" />
-      <button type='submit' class="button button-blue button-big mobile-block">{{ site.text.contact.submit }}</button>
+      <div class="circle-button" style="padding-top: 3%;" onclick="this.parentNode.submit()">
+            <div class="top-circle" data-sr-id="80" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+              <img src="{{ site.url }}/images/logos/send.png">
+        </div>
+      </div>
     </form>
   {% else %}
     <form action="https://formspree.io/{{ site.email }}" method="POST" class="form-stacked">
@@ -20,7 +24,11 @@ tags: contact
       <input type="hidden" name="_next" value="{{ site.baseurl }}/thanks/" />
       <input type="hidden" name="_subject" value="{{ site.text.contact.subject }}" />
       <input type="text" name="_gotcha" style="display:none" />
-      <input type="submit" class="button button-blue button-big mobile-block" value="{{ site.text.contact.submit }}">
+      <div class="circle-button" style="padding-top: 3%;" onclick="this.parentNode.submit()">
+            <div class="top-circle" data-sr-id="80" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+              <img src="{{ site.url }}/images/logos/send.png">
+        </div>
+      </div>
     </form>
   {% endif %}
 </div>
