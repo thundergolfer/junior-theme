@@ -125,7 +125,7 @@ hopefully sidestep this inconvenience.
 
 ### There's more being added all the time
 
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to request,
+Checkout the [Github repository](https://github.com/thundergolfer/junior) to request,
 or add, features.
 
 Happy writing.
