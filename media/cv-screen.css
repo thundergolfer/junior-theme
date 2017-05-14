@@ -80,7 +80,7 @@ p code {
 }
 
 
-ul {
+#resume ul {
 	position: relative;
 	left: 25%;
 	width: 65%;
@@ -102,7 +102,7 @@ li ul {
 /*	margin-top: 0.25em; */
 }
 
-h1,h2,h3,h4 {
+#resume h1, #resume h2, #resume h3, #resume h4 {
 	font-weight: 400;
 	/*font-family: Cousine,Verdana,sans-serif;*/
 	width: 65%;
@@ -129,7 +129,7 @@ h1+p {
 	margin-bottom: 0em !important;
 }
 
-h2 {
+#resume h2 {
 	font-size: 1.1em;
 	/* color: #a00; */
 	color: black;
