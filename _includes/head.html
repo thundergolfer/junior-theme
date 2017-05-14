@@ -17,7 +17,7 @@
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <!-- Custom CSS -->
+    <!-- Theme CSS -->
     <link rel="stylesheet" href="{{ "/css/junior.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
 
     {% if page.tags contains "resume" %}
@@ -26,8 +26,10 @@
     <!-- imports -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    {% endif %}
+
+    {% if page.tags contains "projects" %}
+    <link rel="stylesheet" href="{{ "/css/projects.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
     {% endif %}
 
     <!-- Fonts -->
