@@ -3,12 +3,12 @@
 
 *Junior* is a blog/portfolio theme for [Jekyll](http://jekyllrb.com), the static site generator. It's designed and developed by [@jonobelotti_IO](https://twitter.com/jonobelotti_IO).
 
-![Junior](https://f.cloud.github.com/assets/98681/1834359/71ae4048-73db-11e3-9a3c-df38eb170537.png)
 
-See Poole in action with [the demo site](https://thundergolfer.github.io/junior-theme).
+See Junior in action with [the demo site](https://thundergolfer.github.io/junior-theme).
 
 ## Contents
 
+- [Preview](#preview)
 - [Usage](#usage)
 - [Options](#options)
   - [Rems, `font-size`, and scaling](#rems-font-size-and-scaling)
@@ -16,6 +16,43 @@ See Poole in action with [the demo site](https://thundergolfer.github.io/junior-
 - [Author](#author)
 - [License](#license)
 
+## Preview
+
+##### Landing Page
+
+![Junior main page](mockups/junior-front-page.png)
+
+##### Dropdown Menu
+
+![Junior menu dropdown](mockups/junior-menu.png)
+
+##### Example Blog Post
+
+![Junior blog post](mockups/junior-post.png)
+
+##### Resumé
+
+![Junior resumé](mockups/junior-resume.png)
+
+##### Open Source Showcase
+
+![Junior open source showcase](mockups/junior-open-source.png)
+
+##### Project Portfolio Visual Showcase
+
+![Junior visual portfolio](mockups/junior-main-portfolio.png)
+
+##### Project Page
+
+![Junior project page](mockups/junior-portfolio-single.png)
+
+##### About
+
+![Junior about](mockups/junior-about.png)
+
+##### Contact
+
+![Junior contact](mockups/junior-contact.png)
 
 ## Usage
 
