@@ -14,6 +14,16 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}" />
 
+    {% if page.tags contains "resume" %}
+    <link href="../media/cv-screen.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="../media/cv-print.css" type="text/css" rel="stylesheet" media="print">
+    <!-- imports -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    {% endif %}
+
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
