@@ -36,6 +36,8 @@ See Junior in action with [the demo site](https://thundergolfer.github.io/junior
 
 ##### Open Source Showcase
 
+Connects, using Github's API, with your public profile and pulls your projects (ordered by Stars). Coming soon, you will also be able to showcase significant PRs.
+
 ![Junior open source showcase](mockups/junior-open-source.png)
 
 ##### Project Portfolio Visual Showcase
