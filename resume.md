@@ -3,7 +3,6 @@ layout: cv
 title: Resumé
 tags: resume
 permalink: /resume/
-flicker: true
 ---
 # Jonathon Belotti
 
