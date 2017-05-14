@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="mockups/rsz_junior.png"/>
+</p>
+
 # Junior
 -----
 
