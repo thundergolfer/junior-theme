@@ -5,6 +5,7 @@ tags: projects
 permalink: /projects/
 js:
 - js/gh_projects.js
+- js/util_buttons.js
 ---
 
 <div id="display-projects"></div>
@@ -117,27 +118,6 @@ dt {
 	border-bottom:  25px solid transparent;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.scrollup').fadeIn();
-        } else {
-            $('.scrollup').fadeOut();
-        }
-    });
-
-    $('.top-circle').click(function () {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 600);
-        return false;
-    });
-
-});
-</script>
 
 {% for js in page.js %}
   <script type="text/javascript">

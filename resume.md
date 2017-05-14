@@ -102,7 +102,6 @@ Front cover design selected for J. Comp. Chem. (34:22) ([doi:10.1002/jcc.23388](
 * <i class="fa fa-github"></i> <a href="http://github.com/thundergolfer">thundergolfer</a><br />
 *  <i class="fa fa-twitter"></i> <a href="http://twitter.com/benjaminlmoore">benjaminlmoore</a><br />
 
-
 <!-- ### Footer
 
 Last updated: May 2013 -->
