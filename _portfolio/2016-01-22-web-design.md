@@ -17,9 +17,9 @@ categories: project
 </p>
 
 <div class="showcase">
-  <img style="width:50%" src="/img/web-design/1.jpg" alt="">
-  <img style="width:50%" src="/img/web-design/2.jpg" alt="">
-  <img style="width:50%" src="/img/web-design/3.jpg" alt="">
-  <img style="width:50%" src="/img/web-design/4.jpg" alt="">
-  <img style="width:50%" src="/img/web-design/5.jpg" alt="">
+  <img style="width:50%" src="/images/portfolio/web-design/1.jpg" alt="">
+  <img style="width:50%" src="/images/portfolio/web-design/2.jpg" alt="">
+  <img style="width:50%" src="/images/portfolio/web-design/3.jpg" alt="">
+  <img style="width:50%" src="/images/portfolio/web-design/4.jpg" alt="">
+  <img style="width:50%" src="/images/portfolio/web-design/5.jpg" alt="">
 </div>

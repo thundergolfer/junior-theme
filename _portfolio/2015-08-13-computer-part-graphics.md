@@ -17,9 +17,9 @@ categories: project design
 </p>
 
 <div class="showcase">
-  <img style="width:50%" src="/img/computer-part-graphics/1.png" alt="">
-  <img style="width:50%" src="/img/computer-part-graphics/2.png" alt="">
-  <img style="width:50%" src="/img/computer-part-graphics/3.png" alt="">
-  <img style="width:50%" src="/img/computer-part-graphics/4.png" alt="">
-  <img style="width:50%" src="/img/computer-part-graphics/5.png" alt="">
+  <img style="width:50%" src="/images/portfolio/computer-part-graphics/1.png" alt="">
+  <img style="width:50%" src="/images/portfolio/computer-part-graphics/2.png" alt="">
+  <img style="width:50%" src="/images/portfolio/computer-part-graphics/3.png" alt="">
+  <img style="width:50%" src="/images/portfolio/computer-part-graphics/4.png" alt="">
+  <img style="width:50%" src="/images/portfolio/computer-part-graphics/5.png" alt="">
 </div>

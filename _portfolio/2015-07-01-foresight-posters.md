@@ -17,8 +17,8 @@ categories: project design
 </p>
 
 <div class="showcase">
-  <img style="width:50%" src="/img/foresight-posters/1.png" alt="">
-  <img style="width:50%" src="/img/foresight-posters/2.png" alt="">
-  <img style="width:50%" src="/img/foresight-posters/3.png" alt="">
+  <img style="width:50%" src="/images/portfolio/foresight-posters/1.png" alt="">
+  <img style="width:50%" src="/images/portfolio/foresight-posters/2.png" alt="">
+  <img style="width:50%" src="/images/portfolio/foresight-posters/3.png" alt="">
 
 </div>

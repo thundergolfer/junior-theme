@@ -20,10 +20,10 @@ categories: project sound
 </p>
 
 <div class="showcase">
-  <img style="width:50%" src="/img/hyde-electronic/1.png" alt="">
-  <img style="width:50%" src="/img/hyde-electronic/2.png" alt="">
-  <img style="width:50%" src="/img/hyde-electronic/3.png" alt="">
-  <img style="width:50%" src="/img/hyde-electronic/4.jpg" alt="">
-  <img style="width:50%" src="/img/hyde-electronic/5.jpg" alt="">
-  <img style="width:50%" src="/img/hyde-electronic/6.png" alt="">
+  <img style="width:50%" src="/images/portfolio/hyde-electronic/1.png" alt="">
+  <img style="width:50%" src="/images/portfolio/hyde-electronic/2.png" alt="">
+  <img style="width:50%" src="/images/portfolio/hyde-electronic/3.png" alt="">
+  <img style="width:50%" src="/images/portfolio/hyde-electronic/4.jpg" alt="">
+  <img style="width:50%" src="/images/portfolio/hyde-electronic/5.jpg" alt="">
+  <img style="width:50%" src="/images/portfolio/hyde-electronic/6.png" alt="">
 </div>

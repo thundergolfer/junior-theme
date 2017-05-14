@@ -20,8 +20,8 @@ progress: 90
 </p>
 
 <div class="showcase">
-  <img style="width:50%" src="/img/personal-logo/1.png" alt="">
-  <img style="width:50%" src="/img/personal-logo/2.jpg" alt="">
-  <img style="width:50%" src="/img/personal-logo/3.png" alt="">
-  <img style="width:50%" src="/img/personal-logo/4.png" alt="">
+  <img style="width:50%" src="/images/portfolio/personal-logo/1.png" alt="">
+  <img style="width:50%" src="/images/portfolio/personal-logo/2.jpg" alt="">
+  <img style="width:50%" src="/images/portfolio/personal-logo/3.png" alt="">
+  <img style="width:50%" src="/images/portfolio/personal-logo/4.png" alt="">
 </div>

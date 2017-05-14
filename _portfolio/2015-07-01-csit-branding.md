@@ -18,13 +18,13 @@ progress: 100
 </p>
 
 <div class="showcase">
-  <img style="width:50%" src="/img/csit-branding/1.png" alt="">
+  <img style="width:50%" src="/images/portfolio/csit-branding/1.png" alt="">
   <h2>Some earlier concepts.</h2>
-  <img style="width:50%" src="/img/csit-branding/2.jpg" alt="">
-  <img style="width:50%" src="/img/csit-branding/3.png" alt="">
+  <img style="width:50%" src="/images/portfolio/csit-branding/2.jpg" alt="">
+  <img style="width:50%" src="/images/portfolio/csit-branding/3.png" alt="">
   <h2>Current Branding.</h2>
-  <img style="width:50%" src="/img/csit-branding/6.png" alt="">
+  <img style="width:50%" src="/images/portfolio/csit-branding/6.png" alt="">
   <h2>Some Project Specific Work.</h2>
-  <img style="width:50%" src="/img/csit-branding/4.png" alt="">
-  <img style="width:50%" src="/img/csit-branding/5.png" alt="">
+  <img style="width:50%" src="/images/portfolio/csit-branding/4.png" alt="">
+  <img style="width:50%" src="/images/portfolio/csit-branding/5.png" alt="">
 </div>
