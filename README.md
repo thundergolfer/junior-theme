@@ -36,6 +36,8 @@ See Junior in action with [the demo site](https://thundergolfer.github.io/junior
 
 ##### Resumé
 
+Attractive, no-fuss resumé page that includes a PDF-print link (right) with CSS configured to ensure fidelity between screen and paper page.
+
 ![Junior resumé](mockups/junior-resume.png)
 
 ##### Open Source Showcase
