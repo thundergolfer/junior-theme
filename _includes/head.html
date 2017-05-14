@@ -20,6 +20,12 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="{{ "/css/junior.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
 
+    <!-- Page-type specific CSS -->
+    {% if page.categories %}
+    <link rel="stylesheet" href="{{ "/css/960.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
+    <link rel="stylesheet" href="{{ "/css/portfolio.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
+    {% endif %}
+
     {% if page.tags contains "resume" %}
     <link href="../media/cv-screen.css" type="text/css" rel="stylesheet" media="screen">
     <link href="../media/cv-print.css" type="text/css" rel="stylesheet" media="print">
