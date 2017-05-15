@@ -42,7 +42,7 @@ Attractive, no-fuss resumé page that includes a PDF-print link (right) with CSS
 
 ##### Open Source Showcase
 
-Connects, using Github's API, with your public profile and pulls your projects (ordered by Stars). Coming soon, you will also be able to showcase significant PRs.
+Connects, using Github's API, with your public profile and pulls your projects (ordered by Stars). Coming soon, you will also be able to showcase significant PRs. *Tag colours are also matched to the project's Github language colour-coding.
 
 ![Junior open source showcase](mockups/junior-open-source.png)
 
