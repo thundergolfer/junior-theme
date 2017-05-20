@@ -7,6 +7,32 @@ layout: default
 {% assign minutes = 1 %}
 {% endif %}
 
+<style>
+p a
+{
+  color: black !important;
+  text-decoration: none;
+  border-bottom: .0625em solid #dcf3ff;
+  box-shadow: 0 -.4em 0 #dcf3ff inset;
+}
+
+p a:hover, p a:active, p a:focus {
+  border-color: #aedbf9;
+  box-shadow: 0 -.75em 0 #aedbf9 inset;
+}
+
+p .reversefootnote {
+  border: none;
+  box-shadow: none;
+}
+
+p .reversefootnote:hover, p .reversefootnote:active, p .reversefootnote:focus {
+  border-color: none;
+  box-shadow: none;
+}
+
+</style>
+
 <div class="post-header mb2">
   <h1>{{ page.title }}</h1>
   <span class="post-meta">{{ page.date | date: site.date_format }}</span><br>
