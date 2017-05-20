@@ -23,7 +23,7 @@ jQuery.fn.getRepos = function (username) {
                       	<a href=' + this.stargazers_url + '><span class="numbertag">' + this.watchers + '</span></a> \
                         <span class="tag"><i class="fa fa-github fa-2" aria-hidden="true"></i> FORKS</span> \
                       	<a href=' + this.forks_url + '><span class="numbertag">' + this.forks + '</span></a> \
-                        <div style="padding-top: 2%;"><p>' + this.description + (this.homepage ? ('<a href="' + this.homepage + '"> ' + this.homepage + '</a>') : "") + '</p></div> \
+                        <div style="padding-top: 2%;"><p>' + emojione.shortnameToImage(this.description) + (this.homepage ? ('<a href="' + this.homepage + '"> ' + this.homepage + '</a>') : "") + '</p></div> \
                     ');
         //Similarly fetch everything else you need.
       }
