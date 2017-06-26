@@ -12,15 +12,20 @@
   <span class="menu-text">Menu</span>
 </div>
 
+<div class="home-btn" onclick="window.location.href = '/'">
+  <span class="static-menu-line"></span>
+  <span class="home-text">Home</span>
+</div>
+
 <style>
-.menu-btn.show, [data-id=home] .menu-btn {
+.menu-btn.show, [data-id=home] .menu-btn, .home-btn.show, .home-btn {
     pointer-events: auto; /* not using this block at the moment */
     opacity: 1;
 }
-.header-title span:before, .menu-btn, .menu-text, [data-id=home] .menu-btn {
+.header-title span:before, .menu-btn, .home-btn, .menu-text, .home-text, [data-id=home] .menu-btn {
     position: absolute;
 }
-.menu-btn {
+.menu-btn, .home-btn {
     cursor: pointer;
     height: 100px;
     width: 106px;
@@ -30,7 +35,21 @@
     opacity: 1;
 }
 
-.menu-line:nth-of-type(1), .menu-line:nth-of-type(2) {
+.home-btn {
+    right: 0;
+}
+
+.home-btn > a {
+    position: relative;
+    z-index: 10000;
+}
+
+.diagonal-line {
+
+}
+
+.menu-line:nth-of-type(1), .menu-line:nth-of-type(2),
+.static-menu-line:nth-of-type(1), .static-menu-line:nth-of-type(2) {
     width: 2px;
     height: 85px;
     top: 15%;
@@ -41,29 +60,28 @@
     background: #000;
 }
 
-.menu-line:nth-of-type(1), .menu-line:nth-of-type(2) {
-    width: 2px;
-    height: 85px;
-    top: 15%;
-    left: 50%;
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
-    position: absolute;
-    background: #000;
+.static-menu-line:nth-of-type(1) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 [data-id=home] .menu-text {
     visibility: visible;
 }
 
-.menu-text {
+.menu-text, .home-text {
     top: 73%;
-    left: 22px;
     font-size: .75em;
     font-weight: Normal;
     color: #000;
     pointer-events: none;
     visibility: visible; /* this was "hidden" */
+}
+
+.home-text { right: 22px; }
+.menu-text { left: 22px; }
+
+.menu-text {
     -webkit-transition: all 0.75s ease;
     -moz-transition: all 0.75s ease;
     -o-transition: all 0.75s ease;
