@@ -28,7 +28,7 @@ input[type=week] {
 
 select {
   box-sizing: border-box;
-  line-height: 1.75;
+  line-height: 1;
   padding: $form-field-padding-y $form-field-padding-x;
 }
 
@@ -39,7 +39,7 @@ select:not([multiple]) {
 
 textarea {
   box-sizing: border-box;
-  line-height: 1.75;
+  line-height: 1;
   padding: $form-field-padding-y $form-field-padding-x;
 }
 
@@ -55,7 +55,7 @@ textarea {
   border-style: solid;
   border-width: $border-width;
   border-color: $border-color;
-  border-radius: $border-radius;
+  border-radius: 0;
 }
 
 .field-light:focus {
