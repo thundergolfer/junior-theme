@@ -1,6 +1,37 @@
 jQuery.gitUser = function (username, callback) {
-  jQuery.getJSON('https://api.github.com/users/' + username + '/repos?per_page=100&callback=?', callback); /* Change per_page according to your need. */
-};
+  data = $.retrieveUserData();
+
+  if (data) {
+    console.log("got it!");
+    callback({data: $.parseJSON(data)});
+  }
+  console.log('making API call');
+  jQuery.getJSON('https://api.github.com/users/' + username + '/repos?per_page=100&callback=?', callback) /* Change per_page according to your need. */
+}
+
+jQuery.supportsLocalStorage = function () {
+  try {
+    return 'localStorage' in window && window['localStorage'] !== null;
+  } catch (e) {
+    return false;
+  }
+}
+
+jQuery.cacheUserData = function (data) {
+  if (!$.supportsLocalStorage()) { return false; }
+
+  if (!localStorage.getItem('repos')) {
+    console.log('caching!');
+    localStorage.setItem("repos", JSON.stringify(data));
+  }
+}
+
+jQuery.retrieveUserData = function () {
+  if (!$.supportsLocalStorage()) { return false; }
+
+  console.log("retrieving repos data")
+  return localStorage["repos"];
+}
 
 jQuery.fn.getRepos = function (username) {
   this.html("<h2 style=\"color:#FFF;\">Hold on tight, digging out " + username + "'s repositories...</h2><br>");
