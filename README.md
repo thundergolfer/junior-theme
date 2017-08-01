@@ -135,7 +135,7 @@ To easily scale your site's typography and components, simply customize the base
 
 *Junior* has two branches, but only one is used for active development.
 
-- `master` for development.  **All pull requests should be to submitted against `master`.**
+- `master` for development.  **All pull requests should be to submitted against `master`. Cheers**
 - `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
 
 CSS is handled via Jeykll's built-in Sass compiler. Source Sass files are located in `_sass/`, included into `styles.scss`, and compile to `styles.css`.
