@@ -377,13 +377,13 @@ td {
   */
 
   .github-icon{
-    background-image:url(images/github-icon.png);
+    background-image:url("/images/github-icon.png");
     background-size:30px 30px;
     height:30px;
     width:30px;
   }
   .github-icon.light{
-    background-image:url(images/github-icon-white.png);
+    background-image:url("/images/github-icon-white.png");
   }
 
   .project .progress{
@@ -527,21 +527,21 @@ td {
   }
 
   .next-project{
+    background-image: url("//images/chevron-left-black.png");
     left: 30px;
-    background-image: url(images/chevron-left-black.png);
   }
 
   .prev-project{
-    background-image: url(images/chevron-right-black.png);
+    background-image: url("//images/chevron-right-black.png");
     right: 30px;
   }
 
   .next-project.background--dark{
-    background-image: url(images/chevron-left-white.png);
+    background-image: url("//images/chevron-left-white.png");
   }
 
   .prev-project.background--dark{
-    background-image: url(images/chevron-right-white.png);
+    background-image: url("//images/chevron-right-white.png");
   }
 
   .underlined-link{
