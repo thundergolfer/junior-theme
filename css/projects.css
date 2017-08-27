@@ -55,15 +55,15 @@ dt {
 	position:relative;
 	margin:0 0px 0 0px;
 	displaY:inline-block;
-	height: 50px;
-	padding: 0 35px 0 15px;
+	height: 40px;
+	padding: 0 25px 0 10px;
 	background:#E8EDF0;
 	color:#999;
-	line-height: 50px;
+	line-height: 40px;
 }
 
 .lang {
-    margin-right: -5px;
+    margin-right: -10px;
     display: inline-block;
     *display:inline; /* ie 7 fix */
     vertical-align: top;
@@ -82,19 +82,19 @@ dt {
   margin-right: 10px;
   margin-left: -5px;
 	display:inline-block;
-	height: 50px;
+	height: 40px;
 	padding: 0 25px 0 15px;
 	background: #000;
 	color: #fff;
-	line-height: 50px;
+	line-height: 40px;
 }
 .numbertag:after{
 	position:absolute;
 	content:"";
-	left:-26px;
+	left:-20px;
 	width: 1px;
 	height:0px;
-	border-right: 25px solid #000;
-	border-top:  25px solid transparent;
-	border-bottom:  25px solid transparent;
+	border-right: 20px solid #000;
+	border-top:  20px solid transparent;
+	border-bottom:  20px solid transparent;
 }
