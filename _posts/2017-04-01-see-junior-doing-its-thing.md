@@ -4,6 +4,7 @@ title:      Junior In Action
 date:       2017-04-01 02:31:19
 summary:    See what the different elements looks like. Your markdown has never looked better.
 categories: jekyll junior
+mathjax: true
 ---
 
 There is a significant amount of subtle, yet precisely calibrated, styling to ensure
@@ -122,6 +123,10 @@ hopefully sidestep this inconvenience.
   </p>
   <footer><cite title="Antoine de Saint-Exupéry">Antoine de Saint-Exupéry</cite></footer>
 </blockquote>
+
+## And MathJax
+
+$$a^2 + b^2 = c^2$$
 
 ### There's more being added all the time
 

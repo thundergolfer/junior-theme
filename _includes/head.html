@@ -53,7 +53,7 @@
     {% endif %}
 
     <!-- MathJax -->
-    {% if site.enable_mathjax %}
+    {% if site.enable_mathjax or page.mathjax == true %}
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
     {% endif %}
