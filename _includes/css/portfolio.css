@@ -439,7 +439,7 @@ td {
   .projects li {
     display: inline-block;
     list-style: none;
-    width: 33.3333%;
+    /*width: 33.3333%;*/
     float: left;
   }
 

@@ -434,13 +434,15 @@ td {
     position: relative;
     margin: 0 15px ;
     padding-bottom: 5%;
+    text-align: center;
   }
 
   .projects li {
+    width: 20vw;
+    height: 20vw;
+    padding: 2%;
     display: inline-block;
     list-style: none;
-    width: 33.3333%;
-    float: left;
   }
 
   .projects li .project {
@@ -869,9 +871,9 @@ td {
   }
 
   @media only screen and (min-width: 1900px) {
-    .projects li {
+    /*.projects li {
       width: 25%;
-    };
+    };*/
   }
 
 
