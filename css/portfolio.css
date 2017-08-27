@@ -767,7 +767,8 @@ td {
     }
 
     .projects li {
-      width: 50%;
+      width: 60vw;
+      height: 60vw;
     }
 
     /*#container {
@@ -866,7 +867,8 @@ td {
     }
 
     .projects li {
-      width: 100%;
+      width: 60vw;
+      height: 60vw;
     }
   }
 
