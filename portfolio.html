@@ -3,6 +3,8 @@ layout: default_design
 title: Sketch & Design
 tags: portfolio
 permalink: /design/
+js:
+- js/util_buttons.js
 ---
 
 <ul class="projects clearfix">
@@ -47,3 +49,9 @@ permalink: /design/
         <img src="{{ site.url }}/images/logos/top.png">
   </div>
 </div>
+
+{% for js in page.js %}
+  <script type="text/javascript">
+  {% include {{ js }} %}
+  </script>
+{% endfor %}
