@@ -434,16 +434,27 @@ td {
     position: relative;
     margin: 0 15px ;
     padding-bottom: 5%;
+    text-align: center;
   }
 
   .projects li {
+    width: 20vw;
+    height: 20vw;
+    padding: 2%;
     display: inline-block;
     list-style: none;
-    width: 33.3333%;
-    float: left;
   }
 
   .projects li .project {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
     margin: 30px 15px 0 15px;
     background-color: #ccc;
     -webkit-transition: all 200ms linear;
@@ -756,7 +767,8 @@ td {
     }
 
     .projects li {
-      width: 50%;
+      width: 60vw;
+      height: 60vw;
     }
 
     /*#container {
@@ -855,14 +867,15 @@ td {
     }
 
     .projects li {
-      width: 100%;
+      width: 60vw;
+      height: 60vw;
     }
   }
 
   @media only screen and (min-width: 1900px) {
-    .projects li {
+    /*.projects li {
       width: 25%;
-    };
+    };*/
   }
 
 

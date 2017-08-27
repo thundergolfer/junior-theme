@@ -439,11 +439,15 @@ td {
   .projects li {
     display: inline-block;
     list-style: none;
-    width: 33.3333%;
+    /*width: 33.3333%;*/
     float: left;
   }
 
   .projects li .project {
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
     margin: 30px 15px 0 15px;
     background-color: #ccc;
     -webkit-transition: all 200ms linear;
@@ -757,7 +761,8 @@ td {
     }
 
     .projects li {
-      width: 50%;
+      width: 60vw;
+      height: 60vw;
     }
 
     /*#container {
@@ -856,7 +861,8 @@ td {
     }
 
     .projects li {
-      width: 100%;
+      width: 60vw;
+      height: 60vw;
     }
   }
 
