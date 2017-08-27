@@ -444,6 +444,15 @@ td {
   }
 
   .projects li .project {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
     margin: 30px 15px 0 15px;
     background-color: #ccc;
     -webkit-transition: all 200ms linear;
