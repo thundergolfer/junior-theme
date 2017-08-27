@@ -1,4 +1,6 @@
-# Site settings
+######################################
+## Site settings                    ##
+######################################
 title:       Junior Theme
 email:       jonathon.bel.melbourne@gmail.com
 author:      Jonathon Belotti
@@ -16,7 +18,9 @@ google_tag_manager:
 # Bing services
 bing_verification:
 
-# Optional features
+######################################
+## Optional features                ##
+######################################
 animated:             false
 show_related_posts:   false
 show_post_footers:    True
@@ -26,17 +30,29 @@ enable_mathjax: false
 extended_fonts: false
 enable_anchorjs: false
 
-# Disqus post comments
-# (leave blank to disable Disqus)
+######################################
+## Optional site sections           ##
+######################################
+show_talks_section:     true
+show_workshops_section: true
+
+######################################
+## Disqus post comments             ##
+## (leave blank to disable Disqus)  ##
+######################################
 disqus_shortname: ''
 
-# Facebook Comments plugin
-# (leave blank to disable Facebook Comments, otherwise set it to true)
+##########################################################################
+## Facebook Comments plugin                                             ##
+## (leave blank to disable Facebook Comments, otherwise set it to true) ##
+##########################################################################
 facebook_comments:
 facebook_appid:
 facebook_comments_number: 10
 
-# Social icons
+###################################
+## Social icons                  ##
+###################################
 github_username: thundergolfer
 bitbucket_username:
 stackoverflow_id:
@@ -52,8 +68,10 @@ bitcoin_url:
 paypal_url:
 flattr_button:
 
-# Post sharing icons
-show_sharing_icons: True # Looks Ugly atm
+###################################
+## Post sharing icons            ##
+###################################
+show_sharing_icons: True
 # Change to 'true' to enable individual icons
 share_facebook: True
 share_twitter: True
@@ -98,7 +116,9 @@ text:
   thanks: 'Thanks for contacting us. We will reply as soon as possible.'
   og_locale: 'en_US'
 
-# Build settings
+############################################
+## Build settings                         ##
+############################################
 markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data', 'footnotes']
@@ -112,7 +132,9 @@ gems:
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
 
-# Collections (for design section of site)
+#################################################
+## Collections (for 'Design' section of site)  ##
+#################################################
 collections:
   portfolio:
     output: true
