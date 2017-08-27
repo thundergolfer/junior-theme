@@ -13,8 +13,21 @@ I'm currently doing a lot of work building developer communities around my Unive
 
 My main areas of interest are in NLP, Agent-Oriented Programming, and Computational Dialectics.
 
+{% if site.show_talks_section %}
+## Talks
+
+- Put something here!
+{% endif %}
+
+{% if site.show_workshops_section %}
+## Workshops
+
+- Put something here!
+{% endif %}
+
+
 <style>
-.post-header {
+.post-header, #talks, #workshops {
   text-align: center; /* Want the About Page header to be in the middle */
 }
 </style>
