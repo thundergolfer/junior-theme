@@ -6,7 +6,17 @@ permalink: /projects/
 js:
 - js/gh_projects.js
 - js/util_buttons.js
+- js/quick_facts.js
 ---
+
+{% if site.show_about_me_quick_facts %}
+{% comment %} This must be put first after the Jeykll metadata header! {% endcomment %}
+<p style="padding-bottom: 2%;">
+@@ moderator of [r/learnmachinelearning](https://www.reddit.com/r/learnmachinelearning/)
+@@ author of [insults](https://github.com/thundergolfer/Insults)
+@@ 123 Github Stars
+</p>
+{% endif %}
 
 <div id="display-projects"></div>
 
@@ -28,3 +38,12 @@ js:
     $("#display-projects").getRepos("thundergolfer"); //Add your github username.
   });
 </script>
+
+<style>
+#quick_fact {
+  border: 2px solid black;
+  font-size: 0.8em;
+  padding: 1%;
+  margin-right: 2%;
+}
+</style>
