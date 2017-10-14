@@ -1,6 +1,6 @@
 jQuery.gitUser = function (username, callback) {
-  jQuery.getJSON('https://api.github.com/users/' + username + '/repos?per_page=100&callback=?', callback) //Change per_page according to your need.
-}
+  jQuery.getJSON('https://api.github.com/users/' + username + '/repos?per_page=100&callback=?', callback); /* Change per_page according to your need. */
+};
 
 jQuery.fn.getRepos = function (username) {
   this.html("<h2 style=\"color:#FFF;\">Hold on tight, digging out " + username + "'s repositories...</h2><br>");
@@ -14,7 +14,7 @@ jQuery.fn.getRepos = function (username) {
     target.empty().append(list);
     $(repos).each(function () {
       checkfork = this.fork;
-      console.log(this)
+      console.log(this);
       if ((this.name != (username.toLowerCase() + '.github.com')) && (checkfork != true)) { /* Check for username.github.com repo and for forked projects */
         list.append('<dt> \
                         <a style="font-size:20px;" href="' + (this.homepage ? this.homepage : this.html_url) + '"><h4 style="display: inline; padding-right: 2%;">/' + this.name + '   </h4></a> \
@@ -1414,9 +1414,9 @@ jQuery.fn.getRepos = function (username) {
                 "color": null,
                 "url": "https://github.com/trending?l=Zimpl"
             }
-        }
-    lang = map[lang]
-    color = (!lang ? false : lang['color'])
-    return (!color ? "gray" : color)
+        };
+    lang = map[lang];
+    color = (!lang ? false : lang['color']);
+    return (!color ? "gray" : color);
   }
 };
