@@ -1,6 +1,6 @@
 console.log("Yeay");
 
-// utility function for returning a promise that resolves after a delay
+/* utility function for returning a promise that resolves after a delay */
 function delay(t) {
     return new Promise(function (resolve) {
         setTimeout(resolve, t);
@@ -8,7 +8,7 @@ function delay(t) {
 }
 
 Promise.delay = function (fn, t) {
-    // fn is an optional argument
+    /* fn is an optional argument */
     if (!t) {
         t = fn;
         fn = function () {};
@@ -17,7 +17,7 @@ Promise.delay = function (fn, t) {
 }
 
 Promise.prototype.delay = function (fn, t) {
-    // return chained promise
+    /* return chained promise */
     return this.then(function () {
         return Promise.delay(fn, t);
     });
