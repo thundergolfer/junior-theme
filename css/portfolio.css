@@ -52,6 +52,10 @@ body, button, input, select, textarea {
   text-shadow: none;
 }
 
+#main ul {
+  padding-left: 0;
+}
+
 a {
   color: #00e;
   -webkit-transition: color 200ms linear;
@@ -776,7 +780,7 @@ td {
     }*/
 
     .projects li .project {
-      margin: 15px 7.5px 0 7.5px;
+      margin: 15px 7.5px 0 0px;
     }
 
     header .inner{

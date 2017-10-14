@@ -770,7 +770,7 @@ td {
     }*/
 
     .projects li .project {
-      margin: 15px 7.5px 0 7.5px;
+      margin: 15px 7.5px 0 0px;
     }
 
     header .inner{
