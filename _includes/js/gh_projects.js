@@ -7,15 +7,15 @@ jQuery.fn.getRepos = function (username) {
 
   var target = this;
   $.gitUser(username, function (data) {
-    var repos = data.data; // JSON Parsing
-    //alert(repos.length); Only for checking how many items are returned.
-    sortByForks(repos); //Sorting by forks. You can customize it according to your needs.
+    var repos = data.data; /* JSON Parsing */
+    /* alert(repos.length); Only for checking how many items are returned. */
+    sortByForks(repos); /* Sorting by forks. You can customize it according to your needs. */
     var list = $('<dl/>');
     target.empty().append(list);
     $(repos).each(function () {
       checkfork = this.fork;
       console.log(this)
-      if ((this.name != (username.toLowerCase() + '.github.com')) && (checkfork != true)) { //Check for username.github.com repo and for forked projects
+      if ((this.name != (username.toLowerCase() + '.github.com')) && (checkfork != true)) { /* Check for username.github.com repo and for forked projects */
         list.append('<dt> \
                         <a style="font-size:20px;" href="' + (this.homepage ? this.homepage : this.html_url) + '"><h4 style="display: inline; padding-right: 2%;">/' + this.name + '   </h4></a> \
                         <span class="lang" style="background:' + mapLangToColor(this.language) +'"></span> \
@@ -25,14 +25,14 @@ jQuery.fn.getRepos = function (username) {
                         <a href=' + this.html_url + '><span class="numbertag">' + this.forks + '</span></a> \
                         <div style="padding-top: 2%;"><p>' + emojione.shortnameToImage(this.description) + (this.homepage ? ('<a href="' + this.homepage + '"> ' + this.homepage + '</a>') : "") + '</p></div> \
                     ');
-        //Similarly fetch everything else you need.
+        /* Similarly fetch everything else you need. */
       }
     });
   });
 
   function sortByForks(repos) {
     repos.sort(function (a, b) {
-      return b.forks - a.forks; //Descending order for number of forks based sorting.
+      return b.forks - a.forks; /* Descending order for number of forks based sorting. */
     });
   }
 
