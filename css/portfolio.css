@@ -861,11 +861,6 @@ td {
   }
 
   @media only screen and (max-width: 480px) {
-
-    header nav {
-      display: none;
-    }
-
     header nav.mobile-nav {
       display: block;
     }
