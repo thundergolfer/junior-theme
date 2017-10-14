@@ -29,14 +29,14 @@
     <!-- JQuery -->
     <script aync src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="{{ "/css/junior.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
-
     <!-- Page-type specific CSS -->
     {% if page.categories contains "project" or page.tags contains "portfolio" %}
     <link rel="stylesheet" href="{{ "/css/960.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
     <link rel="stylesheet" href="{{ "/css/portfolio.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
     {% endif %}
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{{ "/css/junior.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
 
     {% if page.tags contains "resume" %}
     <link href="../css/cv-screen.css" type="text/css" rel="stylesheet" media="screen">

@@ -162,12 +162,12 @@ dd {
   margin: 0 0 0 40px;
 }
 
-nav ul, nav ol {
+/*nav ul, nav ol {
   list-style: none;
   list-style-image: none;
   margin: 0;
   padding: 0;
-}
+}*/
 
 img {
   border: 0;
@@ -749,12 +749,12 @@ td {
 
 
   @media only screen and (max-width: 1024px) {
-    header {
+    /*header {
       top: 0px;
       width: 100%;
       left: 0px;
       padding: 15px 0 15px;
-    }
+    }*/
 
     .projects {
       margin: 0 7.5px;
@@ -770,7 +770,7 @@ td {
     }*/
 
     .projects li .project {
-      margin: 15px 7.5px 0 7.5px;
+      margin: 15px 7.5px 0 0px;
     }
 
     header .inner{
@@ -779,13 +779,9 @@ td {
   }
 
   @media only screen and (max-width: 600px) {
-    header h1 {
-      display: none;
-    }
-
     header .initials {
-      display: inline-block;
-    }
+      /*display: inline-block;
+    }*/
 
     .post p{
       font-size:14px;
@@ -851,14 +847,9 @@ td {
   }
 
   @media only screen and (max-width: 480px) {
-
-    header nav {
-      display: none;
-    }
-
-    header nav.mobile-nav {
+    /*header nav.mobile-nav {
       display: block;
-    }
+    }*/
 
     .projects li {
       width: 60vw;
