@@ -4,55 +4,55 @@
   <div class="share-links">
     {% if site.share_facebook %}
     <div class="circle-share share-facebook">
-      <a class="fa fa-facebook fa-3x" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.facebook }}"></a>
+      <a class="fa fa-facebook fa-2x" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.facebook }}"></a>
     </div>
     {% endif %}
 
     {% if site.share_twitter %}
     <div class="  circle-share share-twitter">
-      <a class="fa fa-twitter fa-3x" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.twitter }}"></a>
+      <a class="fa fa-twitter fa-2x" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.twitter }}"></a>
     </div>
     {% endif %}
 
     {% if site.share_googleplus %}
     <div class="  circle-share share-google">
-      <a class="fa fa-google-plus fa-3x" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.googleplus }}"></a>
+      <a class="fa fa-google-plus fa-2x" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.googleplus }}"></a>
     </div>
     {% endif %}
 
     {% if site.share_linkedin %}
     <div class="  circle-share">
-      <a class="fa fa-linkedin fa-3x" href="http://www.linkedin.com/shareArticle?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.linkedin }}"></a>
+      <a class="fa fa-linkedin fa-2x" href="http://www.linkedin.com/shareArticle?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.linkedin }}"></a>
     </div>
     {% endif %}
 
     {% if site.share_digg %}
     <div class="  circle-share">
-      <a class="fa fa-digg fa-3x" href="http://digg.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.digg }}"></a>
+      <a class="fa fa-digg fa-2x" href="http://digg.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.digg }}"></a>
     </div>
     {% endif %}
 
     {% if site.share_tumblr %}
     <div class="  circle-share">
-      <a class="fa fa-tumblr fa-3x" href="http://www.tumblr.com/share/link?url={{ site.url }}{{ page.url }}&name={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.tumblr }}"></a>
+      <a class="fa fa-tumblr fa-2x" href="http://www.tumblr.com/share/link?url={{ site.url }}{{ page.url }}&name={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.tumblr }}"></a>
     </div>
     {% endif %}
 
     {% if site.share_reddit %}
     <div class="  circle-share share-reddit">
-      <a class="fa fa-reddit fa-3x" href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.reddit }}"></a>
+      <a class="fa fa-reddit fa-2x" href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.reddit }}"></a>
     </div>
     {% endif %}
 
     {% if site.share_stumbleupon %}
     <div class="  circle-share">
-      <a class="fa fa-stumbleupon fa-3x" href="http://www.stumbleupon.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.stumbleupon }}"></a>
+      <a class="fa fa-stumbleupon fa-2x" href="http://www.stumbleupon.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.stumbleupon }}"></a>
     </div>
     {% endif %}
 
     {% if site.share_hackernews %}
     <div class="  circle-share">
-      <a class="fa fa-hacker-news fa-3x" onclick="parent.postMessage('submit','*')" href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}&t={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.hackernews }}"></a>
+      <a class="fa fa-hacker-news fa-2x" onclick="parent.postMessage('submit','*')" href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}&t={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.hackernews }}"></a>
     </div>
     {% endif %}
   </div>
@@ -77,8 +77,8 @@
 }
 
 .circle-share {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background: #000;
     border-radius: 50px;
     margin: 0 auto;
