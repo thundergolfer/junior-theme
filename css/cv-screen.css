@@ -55,8 +55,6 @@ body {
 	line-height: 1.5em;
 	/* font-family: Verdana, sans-serif; */
 	font-family: "Open sans", sans-serif;
-	margin-top: 1em;
-	margin-left: 1em;
 }
 
 p {
@@ -198,7 +196,9 @@ strong {
 		width: 65%;
 }
 
-#technical
+#main-menu a {
+	font-size: 1.2em;
+}
 
 /*
 @media only screen and (max-width: 480px) {
