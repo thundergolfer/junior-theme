@@ -1,0 +1,75 @@
+
+nav ul {
+    z-index: 1001;
+    float: left;
+    padding-left: 0;
+    padding-bottom: 5%;
+    margin: 0;
+    background: $header-fg;
+    width: 100%;
+    -webkit-transform: translateY(-116%);
+    transform: translateY(-116%);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+
+nav .flexbox-parent {
+    width: 100000%;
+}
+
+nav li {
+    list-style: none;
+    margin: 4vh auto;
+}
+
+nav .nav-underline:before {
+    bottom: 0;
+    width: 100%;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.medium-link h2:before, nav .nav-underline:before, nav a:after {
+    content: '';
+    border-bottom: 2px solid $header-fg;
+}
+
+nav .nav-underline:before, nav a:after {
+    position: absolute;
+    left: 0;
+    transition: .4s;
+}
+
+nav a {
+    position: relative;
+}
+
+nav .nav-underline:hover:before {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+nav a:hover:after {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    width: 100%;
+}
+
+nav a:after {
+    bottom: .5vh;
+    width: 100%;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
