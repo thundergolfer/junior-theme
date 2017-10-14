@@ -106,7 +106,9 @@ No matter your production or hosting setup, be sure to verify the `baseurl` opti
 
 ## Options
 
-Junior includes some customizable options, typically applied via classes on the `<body>` element.
+### Google Analytics
+
+In `_config.yml` the option `google_analytics:` is left blank if you don't want to use Google Analytics. Add `true` if you want to use it, and replace `[[[TRACKING ID HERE]]]` with your "Tracking ID". You can get one of those for your new site [here](https://www.google.com/analytics). 
 
 
 ### Rems, `font-size`, and scaling
