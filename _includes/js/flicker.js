@@ -1,5 +1,3 @@
-console.log("Yeay");
-
 /* utility function for returning a promise that resolves after a delay */
 function delay(t) {
     return new Promise(function (resolve) {
