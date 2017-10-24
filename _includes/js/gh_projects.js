@@ -1,3 +1,6 @@
+// hide Github stats section before it's rendered properly
+document.getElementsByClassName("measure")[0].getElementsByTagName("p")[0].style.display = 'none';
+
 jQuery.gitUser = function (username, callback) {
   jQuery.getJSON('https://api.github.com/users/' + username + '/repos?per_page=100&callback=?', callback) //Change per_page according to your need.
 }
@@ -11,6 +14,10 @@ jQuery.fn.getRepos = function (username) {
     //alert(repos.length); Only for checking how many items are returned.
     sortByForks(repos); //Sorting by forks. You can customize it according to your needs.
     var list = $('<dl/>');
+    var totalStars = 0;
+    var totalForks = 0;
+    var totalPublicRepos = repos.length;
+
     target.empty().append(list);
     $(repos).each(function () {
       checkfork = this.fork;
@@ -25,15 +32,48 @@ jQuery.fn.getRepos = function (username) {
                         <a href=' + this.html_url + '><span class="numbertag">' + this.forks + '</span></a> \
                         <div style="padding-top: 2%;"><p>' + emojione.shortnameToImage(this.description) + (this.homepage ? ('<a href="' + this.homepage + '"> ' + this.homepage + '</a>') : "") + '</p></div> \
                     ');
+        totalStars += this.watchers;
+        totalForks += this.forks;
         //Similarly fetch everything else you need.
       }
     });
+
+    enterGithubStats(totalStars, totalForks, totalPublicRepos);
   });
 
   function sortByForks(repos) {
     repos.sort(function (a, b) {
       return b.forks - a.forks; //Descending order for number of forks based sorting.
     });
+  }
+
+
+  function enterGithubStats(totalStars, totalForks, totalPublicRepos) {
+    stats = [totalPublicRepos, totalForks, totalStars];
+    facts_p = document.getElementsByClassName("measure")[0].getElementsByTagName("p")[0];
+    facts_p.setAttribute("style", "text-align: center; padding-bottom: 2%;");
+    var facts_text = facts_p.innerHTML;
+
+    console.log("facts text: " + facts_text);
+
+    // we won't remove the facts <p> tag we will just remove what's inside it
+    var new_html = "";
+
+    facts = facts_text.split("@@ ");
+
+    var currStat = 0
+    for (var i = 0; i < facts.length; i++) {
+      fact = facts[i];
+      stat = stats[currStat];
+
+      if (fact.replace(/\s/g, '').length) {
+        console.log("fact: " + fact);
+        new_html += ("<span id='quick_fact'>" + stat + " " + fact + "</span>")
+        currStat += 1;
+      }
+    }
+    facts_p.innerHTML = new_html;
+    facts_p.style.display = 'block';
   }
 
   function mapLangToColor(lang) {
