@@ -193,11 +193,29 @@ strong {
 	 page-break-before: always;
 }*/
 
-
+@page { size: auto;  margin: 0mm; } /* hide page title and date */
 
 @media print
 {
+
+	.site-header {
+		display: none !important;
+	}
+
+	.site-wrap .post .measure {
+		margin-top: 50px;
+		max-width: 80em;
+	}
+
 	.print-button, .circle-button, .top-circle, .top-circle img {
+		display: none !important;
+	}
+
+	.menu-btn, .home-btn {
+		display: none !important;
+	}
+
+	footer {
 		display: none !important;
 	}
 }
