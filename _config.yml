@@ -40,7 +40,7 @@ show_workshops_section: true
 ## Disqus post comments             ##
 ## (leave blank to disable Disqus)  ##
 ######################################
-disqus_shortname: ''
+disqus_shortname: 'juniortheme-live'
 
 ##########################################################################
 ## Facebook Comments plugin                                             ##
