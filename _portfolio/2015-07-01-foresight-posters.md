@@ -3,7 +3,7 @@ layout: post-wide
 hero-bg-color: "#212121"
 uid: foresight-posters
 title:  "Foresight Promo Posters"
-worktype: "Development"
+worktype: "Visual Communication"
 date:   2015-07-01 15:35:01
 categories: project design
 ---

@@ -3,7 +3,7 @@ layout: post-wide
 hero-bg-color: "#212121"
 uid: csit-branding
 title:  "CSIT Branding and Logo"
-worktype: "Development"
+worktype: "Design & Branding"
 date:   2015-04-19 15:35:01
 categories: project
 progress: 100

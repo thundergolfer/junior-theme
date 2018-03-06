@@ -3,7 +3,7 @@ layout: post-wide
 hero-bg-color: "#fff"
 uid: web-design
 title:  "Web Design"
-worktype: "Development"
+worktype: "Web Design"
 date:   2015-04-19 15:35:01
 categories: project
 ---

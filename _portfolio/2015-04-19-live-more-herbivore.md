@@ -3,7 +3,7 @@ layout: post-wide
 hero-bg-color: "#AFFCC9"
 uid: live-more-herbivore
 title:  "Personal Logo Concept"
-worktype: "Development"
+worktype: "Design"
 date:   2015-04-19 15:35:01
 categories: project
 progress: 100

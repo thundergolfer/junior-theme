@@ -3,7 +3,7 @@ layout: post-wide
 hero-bg-color: "#DBEDFF"
 uid: computer-part-graphics
 title:  "Computer Part Graphics"
-worktype: "Development"
+worktype: "Visual Communication"
 date:   2015-08-13 11:35:01
 categories: project design
 ---
