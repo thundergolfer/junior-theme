@@ -12,6 +12,7 @@ See Junior in action with [the demo site](https://thundergolfer.github.io/junior
 
 ## Contents
 
+- [Features](#features)
 - [Preview](#preview)
 - [Usage](#usage)
 - [Options](#options)
@@ -19,6 +20,16 @@ See Junior in action with [the demo site](https://thundergolfer.github.io/junior
 - [Development](#development)
 - [Author](#author)
 - [License](#license)
+
+## Features
+
+- Blog/Technical posts, with support for code syntax highlighting, `LaTeX` markup, images, footnotes, and font color-highlighting
+- 'Portfolio' section, which emphasises large-image content
+- Markdown resumé, with support for fast and easy PDF printing
+- Connects to your Github profile via their API, in order to display open-source work
+- RSS Feed
+- Contact page, with anti-spam protection
+- Smooth CSS transition elements, and a nice B&W theme
 
 ## Preview
 
