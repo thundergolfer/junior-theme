@@ -33,6 +33,8 @@ See Junior in action with [the demo site](https://thundergolfer.github.io/junior
 
 ## Preview
 
+> **Note:** These images may be outdated. See http://juniortheme.live/ for latest version of theme
+
 ##### Landing Page
 
 ![Junior main page](mockups/junior-front-page.png)
