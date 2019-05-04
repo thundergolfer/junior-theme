@@ -155,6 +155,10 @@ To easily scale your site's typography and components, simply customize the base
 
 CSS is handled via Jeykll's built-in Sass compiler. Source Sass files are located in `_sass/`, included into `styles.scss`, and compile to `styles.css`.
 
+#### Running 
+
+`bundle exec jekyll serve`
+
 ## Credit
 
 * [Pixyll theme](https://github.com/johnotander/pixyll) was used as a base for development of this theme.
@@ -163,5 +167,3 @@ CSS is handled via Jeykll's built-in Sass compiler. Source Sass files are locate
 ## License
 
 Open sourced under the [MIT license](LICENSE).
-
-<3
