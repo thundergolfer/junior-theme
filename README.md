@@ -8,7 +8,7 @@
 *Junior* is a blog/portfolio theme for [Jekyll](http://jekyllrb.com), the static site generator. It's designed and developed by [@jonobelotti_IO](https://twitter.com/jonobelotti_IO).
 
 
-See Junior in action with [the demo site](juniortheme.live).
+See Junior in action with [the demo site](https://juniortheme.live).
 
 ## Contents
 
