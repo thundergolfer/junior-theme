@@ -31,7 +31,7 @@
 
 ## Preview
 
-> **Note:** These images may be outdated. See http://juniortheme.live/ for latest version of theme
+> **Note:** These images may be outdated.
 
 ##### Landing Page
 
